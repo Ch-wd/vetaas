@@ -1,0 +1,384 @@
+:root{
+    --text-color: #545454;
+    --mustard: #f6be32;
+    --crimson : #d3561e;
+    --green: #2ec4b6;
+    ----bs-card-border-radius: 10%;
+    --grey: #d9d9d9;
+}
+
+
+.nav-link:hover{
+ color: var(--crimson);
+ /* color: #f8db4a; */
+}
+
+.dropdown-item:hover{
+    color: var(--crimson);
+}
+
+.nav-link{
+    text-align: center;
+}
+
+@media (max-width:991px){
+    .navbar-nav{
+        background-color: #dadada; 
+    }
+}
+
+.dropdown:hover>.dropdown-menu{
+    display: block;
+}
+
+
+body{
+    background-image: url("assets/background.jpg");
+}
+
+.slide{
+    width: 100%;
+    /* position: absolute; */
+    /* z-index: -1; */
+    top: 0;
+    left: 0 ;
+}
+
+.prev-button{
+    background-color: #000;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    top:50%;
+    left: 5%;
+    z-index: 1;
+}
+
+
+.next-button{
+    background-color: #000;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    top:50%;
+    right: 5%;
+    z-index: 1;
+}
+
+.image-quote{
+    position: absolute;
+    display: block;
+    top: 30%;
+    left: 10%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    width: 40vw;
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+.btn-warning{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 10px;
+    color: var(--text-color);
+}
+.nav-item{
+    color: var(--text-color);
+}
+
+
+.navbar-nav .nav-link.active{
+    color: var(--text-color);
+}
+
+
+
+
+
+.page-2, .page-4{
+    background: linear-gradient(90deg, rgba(46,196,182,1) 0%, rgba(53,180,168,1) 49%, rgba(46,196,182,1) 100%);
+    
+}
+
+h1{
+    font-size: 50px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: bold;
+    text-align: center;
+
+}
+
+h2{
+    text-align: center;
+    color: var(--text-color);
+    font-size: 30px;
+}
+.card{
+     border-radius: 20px;
+     margin-bottom: 20px;
+}
+.card-body{
+    background-image: url("assets/background.jpg");
+    border-radius: 20px;
+}
+
+.work-panel-container{
+    justify-content: space-evenly;
+}
+
+.image-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.work-panel-details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text-color);
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+
+}
+
+.dark-title{
+    color: var(--text-color);
+}
+
+.white-title{
+    color: #ffffff;
+}
+.btn{
+    font-size: 10px;
+}
+
+.counter{
+    font-size: 30px;
+    color: var(--text-color);
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.counter-number{
+    font-size: 40px;
+    color: var(--text-color);
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.counter-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.counter-box{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: center;
+}
+
+.testimonial-item{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.testimonial-block{
+    color: var(--text-color);
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size:20px;
+    text-align: center;
+}
+.important-links{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.sub-links{
+    text-align: left;
+    margin-left: unset;
+    margin-right: unset;
+}
+.testimonial-roles{
+    font-style: bold;
+    font-weight: 700;
+}
+.testimonial-text{
+
+    
+}
+.logo-container{
+    text-align: left;
+}
+.footer{
+    background-color: var(--grey);
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: light;
+    align-items: center;
+    color: var(--text-color);
+    font-size: 20px;
+}
+.footer-container{
+    align-items: center;
+    flex-direction: column;
+}
+.footer-nav-item{
+    font-size: 20px;
+    color: var(--text-color);
+}
+.footer-nav-item:hover{
+    color: var(--crimson);
+}
+.footer-sub-menu{
+    font-size: 30px;
+    color: var(--text-color);
+    font-weight: 700;
+    font-style: bold;
+}
+.footer a{
+    text-decoration: none;
+}
+
+.contact-block{
+    text-align:  left;
+    margin-bottom: 10px;
+}
+
+.sm-icons{
+    display: flex;
+    justify-content: center;
+}
+
+.logo-container{
+    margin-bottom: 10px;;
+}
+
+@media only screen and (min-width: 992px){
+    .next-button{
+        width: 50px;
+        height: 50px;
+    }
+    .prev-button{
+        width: 50px;
+        height: 50px;
+    }
+    .nav-item{
+        font-size: 1.5vw;
+    }
+    .btn{
+        font-size: 20px; 
+    }
+    .counter{
+        font-size: 60px;
+    }
+    .counter-number{
+        font-size: 60px;
+    }
+    .counter-box{
+        flex-direction: column;
+    }
+    .testimonial-item{
+        flex-direction: row;
+    }
+    .testimonial-block{
+        font-size:30px;
+        text-align: left;
+        
+    }
+    .footer-container{
+        flex-direction: row;
+    }
+    .footer-nav-item{
+        font-size: 25px;
+    }
+    .footer-sub-menu{
+        font-size: 30px;
+    }
+    .contact-block{
+        text-align: right;
+    }
+    .sm-icons{
+        justify-content: flex-end;
+    }
+    .image-quote{
+        font-size: 30px;
+    }
+    h1{
+        font-size: 70px;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width:991px){
+    .next-button{
+        width: 50px;
+        height: 50px;
+    }
+    .prev-button{
+        width: 50px;
+        height: 50px;
+    }
+    .nav-item{
+        font-size: 1.5vw;
+    }
+    .btn{
+        font-size: 15px;
+    }
+    .counter-box{
+        flex-direction: column;
+    }
+    .counter{
+        font-size: 50px;
+    }
+    .counter{
+        font-size: 50px;
+    }
+    .testimonial-item{
+        flex-direction: row;
+    }
+    .testimonial-block{
+        font-size:20px;
+        text-align: left;
+    }
+    .footer-container{
+        flex-direction: row;
+    }
+    .footer-nav-item{
+        font-size: 20px;
+    }
+    .footer-sub-menu{
+        font-size: 25px;
+    }
+    .contact-block{
+        text-align: right;
+    }
+    .sm-icons{
+        justify-content: flex-end;
+    }
+    .image-quote{
+        font-size: 25px;
+    }
+    h1{
+        font-size: 60px;
+    }
+
+}
+
+@media screen and (max-width: 767 px){
+
+}

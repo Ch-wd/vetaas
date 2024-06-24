@@ -1,0 +1,324 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Login</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link href= "style.css" rel = "stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img class ="img-fluid " style = "Height:100px" src = "logo.png"/></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav container-fluid justify-content-end">
+                  <li class="nav-item p-3">
+                    <a class="nav-link active disabled"  href="#">Home</a>
+                  </li>
+                  <li class="nav-item p-3">
+                    <a class="nav-link" href="#">About</a>
+                  </li>
+                  <li class="nav-item dropdown p-3">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Our Work
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">With Parents</a></li>
+                      <li><a class="dropdown-item" href="#">With Teachers</a></li>
+                      <li><a class="dropdown-item" href="#">Community Events</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item p-3">
+                    <a class="nav-link" href="#">Blog</a>
+                  </li>
+                  <li class="nav-item dropdown p-3">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Contact us
+                    </a>
+                    <ul class="dropdown-menu bg-body-tertiary">
+                        <li><a class="dropdown-item" href="#">Enquire</a></li>
+                        <li><a class="dropdown-item" href="#">Join us</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav>
+        <div id="carousel-main" class="carousel slide" data-bs-ride = "carousel" data-bs-ride = "carousel">
+          <div class = ""> 
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class = "image-quote">
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis ad minus consectetur cupiditate atque por.</p>
+                  <a href = "#" class = "btn btn-warning">Learn more</a>
+                </div>
+                <img src="assets/mainImage1.png" class="d-block carousel-image w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <div class = "image-quote">
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis ad minus consectetur cupiditate atque por.</p>
+                  <a href = "#" class = "btn btn-warning">Learn more</a>
+                </div>
+                <img src="assets/mainImage2.png" class="d-block carousel-image w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <div class = "image-quote">
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis ad minus consectetur cupiditate atque por.</p>
+                  <a href = "#" class = "btn btn-warning">Learn more</a>
+                </div>
+                <img src="assets/mainImage3.png" class="d-block carousel-image w-100" alt="...">
+              </div>
+            </div>
+          </div>
+            <button class="carousel-control-prev prev-button" type="button" data-bs-target="#carousel-main" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next next-button" type="button" data-bs-target="#carousel-main" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class = "p-5 page-2">
+          <h1 class = "mb-5 white-title">What we do!</h1>
+          <div class = "row work-panel-container mt-3">
+            <div class = "col-lg-3 col-md-4 col-10">
+              <div class = "card" data-aos = "zoom-in">
+                <div class = "card-body">
+                  <h2 class = "mt-4 ">Some title</h2>
+                  <div class = "image-container">
+                    <img class = "card-img w-75 mt-2" src = "assets/family2.png" width = "200px"/>
+                  </div>
+                  <div class = "work-panel-details mt-4">
+                    <p>Some text describing the work</p>
+                    <ul>
+                      <li class = "mt-1">Some pointers to add</li>
+                      <li class = "mt-1">Add 2 or more points</li>
+                      <li class = "mt-1">Some more points if needed</li>
+                    </ul>
+                    <a href = "#" class = " mt-2 mb-4 btn btn-warning">Learn more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class = "col-lg-3 col-md-4 col-10">
+              <div class = "card" data-aos = "zoom-in" data-aos-delay="250">
+                <div class = "card-body">
+                  <h2 class = "mt-4">Some title</h2>
+                  <div class = "image-container">
+                    <img class = "card-img w-75 mt-2" src = "assets/SEL.png" width = "200px"/>
+                  </div>
+                  <div class = "work-panel-details mt-4">
+                    <p>Some text describing the work</p>
+                    <ul>
+                      <li class = "mt-1">Some pointers to add</li>
+                      <li class = "mt-1">Add 2 or more points</li>
+                      <li class = "mt-1">Some more points if needed</li>
+                    </ul>
+                    <a href = "#" class = " mt-2 mb-4 btn btn-warning">Learn more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class = "col-lg-3 col-md-4 col-10">
+              <div class = "card" data-aos = "zoom-in" data-aos-delay = "500">
+                <div class = "card-body">
+                  <h2 class = "mt-4">Some title</h2>
+                  <div class = "image-container">
+                    <img class = "card-img w-75 mt-2" src = "assets/Community.png" width = "200px"/>
+                  </div>
+                  <div class = "work-panel-details mt-4">
+                    <p>Some text describing the work</p>
+                    <ul>
+                      <li class = "mt-1">Some pointers to add</li>
+                      <li class = "mt-1">Add 2 or more points</li>
+                      <li class = "mt-1">Some more points if needed</li>
+                    </ul>
+                    <a href = "#" class = " mt-2 mb-4 btn btn-warning">Learn more</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <div class = " p-5 page-3">
+          <h1 class = "mb-5 dark-title">Our impact</h1>
+          <div class = "row">
+            <div class = "col-md-4 col-12 mb-5 counter-box">
+              <div class = "counter-container">
+                <img src = "assets/school.png" class = "w-50"/>
+                <span class = "counter-number counter1">2</span><span class = "counter">+</span>
+              </div>
+              <h1 class = "dark-title">Schools</h1>
+            </div>
+            <div class = "col-md-4 col-12 mb-5 counter-box">
+              <div class = "counter-container">
+                <img src = "assets/family.png" class = "w-50"/>
+                <span class = "counter-number counter2">20</span><span class = "counter">+</span>
+              </div>
+              <h1 class = "dark-title">Families</h1>
+            </div>
+            <div class = "col-md-4 col-12 mb-5 counter-box">
+              <div class = "counter-container">
+                <img src = "assets/children.png" class = "w-50"/>
+                <span class = "counter-number counter3">100</span><span class = "counter">+</span>
+              </div>
+              <h1 class = "dark-title">Children</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class = "p-5 page-4">
+          <h1 class = "white-title">Testimonials</h1>
+          <div id="carousel-testimonials" class="carousel slide" data-bs-ride = "carousel">
+            <div class = ""> 
+              <div class="carousel-inner">
+                <div class="carousel-item row active">
+                  <div class = "testimonial-item ">
+                    <img src="assets/usericon.png" class="d-block cols-4 w-25" alt="...">
+                    <div class = "col-6 testimonial-block">
+                      <div class = "testimonial-text">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis ad minus consectetur cupiditate atque por.</p>
+                      </div>
+                      <div class ="testimonial-roles">
+                        Role/Organisation
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item row">
+                  <div class = "testimonial-item ">
+                    <img src="assets/usericon.png" class="d-block cols-4 w-25" alt="...">
+                    <div class = "col-6 testimonial-block">
+                      <div class = "testimonial-text">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis ad minus consectetur cupiditate atque por.</p>
+                      </div>
+                      <div class ="testimonial-roles">
+                        Role/Organisation
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item row">
+                  <div class = "testimonial-item ">
+                    <img src="assets/usericon.png" class="d-block cols-4 w-25" alt="...">
+                    <div class = "col-6 testimonial-block">
+                      <div class = "testimonial-text">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis ad minus consectetur cupiditate atque por.</p>
+                      </div>
+                      <div class ="testimonial-roles">
+                        Role/Organisation
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+              <button class="carousel-control-prev prev-button" type="button" data-bs-target="#carousel-testimonials" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next next-button" type="button" data-bs-target="#carousel-testimonials" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+          </div>
+          
+        </div>
+        <div class = "footer p-5">
+          <div class = "container-fluid footer-container row">
+            <div class = "col-md-4 col-12 logo-container">
+              <img class = "logo img-fluid w-75" src = "assets/logo.png"/>
+
+            </div>
+            <div class = " col-md-4 col-12 important-links">
+              <div class = "footer-sub-menu">
+                Important links
+              </div>
+              <div class = "sub-links">
+                <div><a class = "footer-nav-item" href = "#">Home</a></div>
+                <div><a class = "footer-nav-item" href = "#">About</a></div>
+                <div><a class = "footer-nav-item" href = "#">Our Work</a></div>
+                <div><a class = "footer-nav-item" href = "#">&emsp; Parents</a></div>
+                <div><a class = "footer-nav-item" href = "#">&emsp; Teacher</a></div>
+                <div><a class = "footer-nav-item" href = "#">&emsp;  Events</a></div>
+                <div><a class = "footer-nav-item" href = "#">Blog</a></div>
+                <div><a class = "footer-nav-item" href = "#">Contact us</a></div>
+
+              </div>
+
+
+            </div>
+            <div class = "col-md-4 col-12 contact-block">
+              <div class = "footer-sub-menu">
+                Reach us
+              </div>
+              <p>Address line 1</p>
+              <p>Address Line 2</p>
+              <p>Bangalore</p>
+              <p>+91-1234567890</p>
+              <p>abc@gmail.com</p>
+              <div class = "sm-icons row-cols-3">
+                <div class = "col-2">
+                  <a href = "#"><img src="assets/fb.png" class = "img-fluid w-50" alt=""></a>
+                </div>
+                <div class = "col-2">
+                  <a href = "#"><img src="assets/insta-icon.png" class = "img-fluid w-50" alt=""></a>
+                </div>
+                <div class = "col-2">
+                  <a href = "#"><img src="assets/linkedin_icon.svg.png" class = "img-fluid w-50" alt=""></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class = "copyright text-center mt-5">
+            Copyright 2024 - Vetaas Education Foundation
+          </div>
+
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js">	</script>
+        <script>
+          AOS.init();
+          const counterUp = window.counterUp.default
+
+          const callback = entries => {
+            entries.forEach( entry => {
+              const el = entry.target
+              if ( entry.isIntersecting && ! el.classList.contains( 'is-visible' ) ) {
+                counterUp( el, {
+                  duration: 2000,
+                  delay: 16,
+                } )
+                el.classList.add( 'is-visible' )
+              }
+            } )
+          }
+
+          const IO1 = new IntersectionObserver( callback, { threshold: 1 } )
+
+          const el1 = document.querySelector( '.counter1' )
+          IO1.observe( el1 )
+          const IO2 = new IntersectionObserver( callback, { threshold: 1 } )
+
+          const el2 = document.querySelector( '.counter2' )
+          IO2.observe( el2 )
+          const IO3 = new IntersectionObserver( callback, { threshold: 1 } )
+
+          const el3 = document.querySelector( '.counter3' )
+          IO3.observe( el3 )
+        </script>
+
+    </body>
+</html>
