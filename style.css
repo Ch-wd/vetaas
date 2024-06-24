@@ -99,7 +99,9 @@ body{
 
 
 .page-2, .page-4{
-    background: linear-gradient(90deg, rgba(46,196,182,1) 0%, rgba(53,180,168,1) 49%, rgba(46,196,182,1) 100%);
+/*     background: linear-gradient(90deg, rgba(46,196,182,1) 0%, rgba(53,180,168,1) 49%, rgba(46,196,182,1) 100%); */
+    background: rgb(39,162,150);
+background: linear-gradient(42deg, rgba(39,162,150,1) 0%, rgba(46,196,182,1) 49%, rgba(26,133,123,1) 100%);
     
 }
 
