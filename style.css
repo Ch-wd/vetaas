@@ -3,6 +3,7 @@
     --mustard: #f6be32;
     --crimson : #d3561e;
     --green: #2ec4b6;
+    /* --green: #55a1ed; */
     ----bs-card-border-radius: 10%;
     --grey: #d9d9d9;
 }
@@ -65,6 +66,10 @@ body{
     z-index: 1;
 }
 
+.card-title{
+    height: 2.5lh;
+}
+
 .image-quote{
     position: absolute;
     display: block;
@@ -99,16 +104,16 @@ body{
 
 
 .page-2, .page-4{
-/*     background: linear-gradient(90deg, rgba(46,196,182,1) 0%, rgba(53,180,168,1) 49%, rgba(46,196,182,1) 100%); */
-    background: rgb(39,162,150);
-background: linear-gradient(42deg, rgba(39,162,150,1) 0%, rgba(46,196,182,1) 49%, rgba(26,133,123,1) 100%);
+    /* background: linear-gradient(90deg, rgba(46,196,182,1) 0%, rgba(53,180,168,1) 49%, rgba(46,196,182,1) 100%); */
+    background: var(--green);
+/* background: linear-gradient(42deg, rgba(39,162,150,1) 0%, rgba(46,196,182,1) 49%, rgba(26,133,123,1) 100%);  */
     
 }
 
 h1{
     font-size: 50px;
     font-family: "Roboto", sans-serif;
-    font-weight: 700;
+    font-weight: 500;
     font-style: bold;
     text-align: center;
 
@@ -140,9 +145,9 @@ h2{
 
 .work-panel-details{
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     color: var(--text-color);
     font-family: "Roboto", sans-serif;
     font-weight: 700;
@@ -223,12 +228,18 @@ h2{
 
     
 }
+
+.contact-panel{
+    display: flex;
+    /* flex-direction: column; */
+
+}
 .logo-container{
     text-align: left;
 }
 .footer{
     background-color: var(--grey);
-    background-image: url("assets/background.jpg");
+    /* background-image: url("assets/background.jpg"); */
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: light;
@@ -271,6 +282,10 @@ h2{
     margin-bottom: 10px;;
 }
 
+.big-btn{
+    height: 3lh;
+    width: 15%;
+}
 @media only screen and (min-width: 992px){
     .next-button{
         width: 50px;
@@ -319,7 +334,7 @@ h2{
         justify-content: flex-end;
     }
     .image-quote{
-        font-size: 30px;
+        font-size: 40px;
     }
     h1{
         font-size: 70px;
@@ -374,7 +389,7 @@ h2{
         justify-content: flex-end;
     }
     .image-quote{
-        font-size: 25px;
+        font-size: 30px;
     }
     h1{
         font-size: 60px;
