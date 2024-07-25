@@ -58,6 +58,50 @@
               </div>
             </div>
         </nav>
+        <div class = "container-fluid p-5 text-center">
+        <div class = "red-title">List of all blogs</div>
+            <table>
+                <?php
+                    if(isset($_GET['error'])){
+
+                ?>
+                        <div class = "text-danger"> <?php echo($_GET['error']); ?></div>
+                <?php
+                    }
+
+                ?>
+                <tr>
+                    <th>Blog name</th>
+                    <th>Date added</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+                    <?php 
+                    $query = "SELECT * from blog";
+                    $result = mysqli_query($conn, $query);
+                    while($row = $result->fetch_assoc()){
+                        echo "<tr>";
+                        echo "<td>$row[blogName]</td>";
+                        echo "<td>$row[dateAdded]</td>";
+                    ?>
+                    <td><form action ="blog_db.php" method = "post">
+                        <input type = "hidden" name = "function" value = "edit">
+                        <input type = "hidden" name = "blogId" value = <?php echo "$row[blogId]"; ?>>
+                        <input type = "submit" value="edit">
+                    </form></td>
+                    <td><form action ="blog_db.php" method = "post">
+                        <input type = "hidden" name = "function" value = "delete">
+                        <input type = "hidden" name = "blogId" value = <?php echo "$row[blogId]"; ?>>
+                        <input type = "submit" value = "delete">
+                    </form></td>
+                    <?php
+                        echo "</tr>";
+                    }
+    
+                    ?>
+    
+            </table>
+        </div>
 
 
         </div>

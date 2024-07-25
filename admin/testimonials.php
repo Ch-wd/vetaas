@@ -47,8 +47,8 @@
                       Testimonials
                     </a>
                     <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="new_testimonials.php">New testimonial</a></li>
-                    <li><a class="dropdown-item" href="testimonials.php">Modify</a></li>
+                      <li><a class="dropdown-item" href="new_testimonials.php">New testimonial</a></li>
+                      <li><a class="dropdown-item" href="testimonials.php">Modify</a></li>
                     </ul>
                   </li>
                   <li class="nav-item p-3">
@@ -58,6 +58,50 @@
               </div>
             </div>
         </nav>
+        <div class = "container-fluid p-5 text-center">
+        <div class = "red-title">List of all testimonials</div>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Role</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+                    <?php
+                        if(isset($_GET['error'])){
+
+                    ?>
+                            <div class = "text-danger"> <?php echo($_GET['error']); ?></div>
+                    <?php
+                        }
+
+                    ?>
+                    <?php 
+                    $query = "SELECT * from testimonials";
+                    $result = mysqli_query($conn, $query);
+                    while($row = $result->fetch_assoc()){
+                        echo "<tr>";
+                        echo "<td>$row[name]</td>";
+                        echo "<td>$row[role]</td>";
+                    ?>
+                    <td><form action ="test_db.php" method = "post">
+                        <input type = "hidden" name = "function" value = "edit">
+                        <input type = "hidden" name = "testId" value = <?php echo "$row[id]"; ?>>
+                        <input type = "submit" value="edit">
+                    </form></td>
+                    <td><form action ="test_db.php" method = "post">
+                        <input type = "hidden" name = "function" value = "delete">
+                        <input type = "hidden" name = "testId" value = <?php echo "$row[id]"; ?>>
+                        <input type = "submit" value = "delete">
+                    </form></td>
+                    <?php
+                        echo "</tr>";
+                    }
+    
+                    ?>
+    
+            </table>
+        </div>
 
 
         </div>
